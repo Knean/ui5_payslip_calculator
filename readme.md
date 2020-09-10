@@ -1,6 +1,6 @@
 [![ui5](https://www.sapspot.com/wp-content/uploads/2019/06/1-1.jpg)](https://sapui5.hana.ondemand.com/1.28.8/explored.html)
 # helloWorld
-This app is going to be a starting point for a full application that can be used by an HR department of a company to produce a payslip for its employees
+This app is going to be a starting point for a full application that can be used by an HR department of a company to produce payslips for its employees
 
 # done
 - json model to store an employee list
