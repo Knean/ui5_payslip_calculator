@@ -13,6 +13,7 @@ This app is going to be a starting point for a full application that can be used
 - store data permanently
 - style the main page so the form doesnt move down after submit
 - add currency into the table
+- add pagination to the employee table
  
 
 ## Credits
