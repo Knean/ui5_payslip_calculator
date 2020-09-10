@@ -51,6 +51,11 @@
         "settings": {
           "bundleName": "com.myorg.helloWorld.i18n.i18n"
         }
+      },
+      "stuff": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri":"model/default.json",
+        "settings": {}
       }
     },
     "resources": {

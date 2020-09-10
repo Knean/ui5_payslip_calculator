@@ -1,12 +1,65 @@
- <mvc:View controllerName="com.myorg.helloWorld.controller.MainView"
-  displayBlock="true"
+<mvc:View controllerName="com.myorg.helloWorld.controller.MainView" displayBlock="true"
   xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns:f="sap.ui.layout.form"
+  xmlns:l="sap.ui.layout">
+  <App id="idAppControl">
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <Table id="empTable" inset="false" items="{path: '/employees',sorter: {path: 'name'}}">
+          <headerToolbar>
+            <Toolbar>
+              <Title text="Employees" level="H2"/>
+            </Toolbar>
+          </headerToolbar>
+          <columns>
+
+            <Column demandPopin="true">
+              <Text text="Name" />
+            </Column>
+
+            <Column demandPopin="true">
+              <Text text="Yearly salary" />
+            </Column>
+
+            <Column demandPopin="true" hAlign="Left">
+              <Text text="Monthly salary" />
+            </Column>
+          </columns>
+          <items>
+            <ColumnListItem>
+              <cells>
+
+                <Text text="{name}" />
+                <Text text="{salary}" />
+                <Text text="{mo_salary}" />
+
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+
+        <l:Grid defaultSpan="L12 M12 S12" width="auto">
+          <l:content>
+            <f:SimpleForm id="empForm" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" title="New Employee" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+
+              <Label text="Name" />
+              <Input id="nameForm" value="{stuff>/form/name}" valueLiveUpdate="{/ValueLiveUpdate}" liveChange="handleLiveChange" />
+
+              <Label text="Salary" />
+              <Input id="salaryForm" value="{stuff>/form/salary}" valueLiveUpdate="{/ValueLiveUpdate}" liveChange="handleLiveChange" />
+
+              <Label text="" />
+              <Button text="Submit" press="onSubmit" />
+            </f:SimpleForm>
+
+          </l:content>
+
+        </l:Grid>
+
       </Page>
     </pages>
   </App>
 </mvc:View>
+
