@@ -6,7 +6,7 @@ to run this app:
 >
 >npm start
 >
-  >pick index.html
+>>pick index.html
   
 # done
 - json model to store an employee list
