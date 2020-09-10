@@ -1,5 +1,5 @@
 # helloWorld
-Insert the purpose of this project and some intersting infos here
+practicing ui5 to upskill
 # done
 - json model to store an employee list
 - table to display employees
