@@ -3,7 +3,9 @@
 This app is going to be a starting point for a full application that can be used by an HR department of a company to produce payslips for its employees
 to run this app:
 >npm install
+>
 >npm start
+>
   >pick index.html
   
 # done
